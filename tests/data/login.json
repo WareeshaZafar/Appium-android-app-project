@@ -1,0 +1,12 @@
+{
+  "existingUser": {
+    "country": "Pakistan",
+    "phoneNumber": "03330007723",
+    "otp": "238956"
+  },
+  "invalidUser": {
+    "country": "0",
+    "phoneNumber": "0",
+    "otp": "000000"
+  }
+}
