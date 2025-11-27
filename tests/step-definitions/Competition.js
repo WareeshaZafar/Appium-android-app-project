@@ -42,18 +42,5 @@ Then('The user reads the competition details and Terms n Conditions text', async
   await CompetitionPage.click_competition_info_icon();
   await CompetitionPage.get_competition_details_text();
   const TnC_text = await CompetitionPage.get_competition_TnC_text();
-  expect(TnC_text).not.toBeNull(); // must have the hard-coded text at the end
+  expect(TnC_text).not.toBeNull();
 });
-
-
-Then('The user verifies that gmail is opened', async () => {
-
-  click_email_icon
-  // verify welcome_to_gmail_screen is displayed 
-  // then, click skip icon 
-});
-
-
-// up next:
-// currently the scroll is not perfect - not consistent everytime
-// put validations on all the contact icons now

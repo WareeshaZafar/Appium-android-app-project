@@ -1,5 +1,7 @@
 # Feature: Signup Feature for User
 
+# brainstorming the scenario:
+
 #   Scenario: User installs the app for the first time and signs up (POSITIVE SCENARIO)
 #     Given The app is launched
 #     When The user clicks on the skip button

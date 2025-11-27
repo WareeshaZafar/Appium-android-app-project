@@ -58,8 +58,6 @@ exports.config = {
         require: [
             './tests/step-definitions/Competition.js',
             './tests/step-definitions/Login.js'
-            // './tests/step-definitions/BookFreeEvent.js',
-            // './tests/step-definitions/BookFreeTicket.js'
         ],
         // <boolean> show full backtrace for errors
         backtrace: false,

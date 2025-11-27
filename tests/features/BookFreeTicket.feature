@@ -10,8 +10,3 @@ Feature: Enter in a Free Ticket Event
   @POSITIVE
   Scenario: The user enters in a free ticket event (POSITIVE SCENARIO)
     When The user searches and selects a free ticket event
-    # Then The free ticket event's detail page opens
-    # When The user books tickets for the event
-    # Then The free event detail page opens
-    # When The user goes to their wallet
-    # When The user finds the same free ticket event in their wallet

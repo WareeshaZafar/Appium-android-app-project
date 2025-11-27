@@ -44,24 +44,23 @@ Then('The user has successfully logged out!', async () => {
   await expect(LoginPage.main_login_button).toBeDisplayed();
 })
 
-// When('The user tries to create a personal account', async () => {
-//   await LoginPage.click_create_personal_account_button();
-//   await LoginPage.click_country_field();
-//   await LoginPage.click_country_dropdown();
-//   await LoginPage.search_country_name(testData.existingUser.country);
-//   await LoginPage.select_desired_country();
-//   await LoginPage.click_phone_number_field();
-//   await LoginPage.enter_phone_number(testData.existingUser.phoneNumber);
-//   await LoginPage.click_register_personal_account_button();
-//   await LoginPage.enter_otp(testData.existingUser.otp);
-//   await LoginPage.click_personal_account_otp_continue_btn();
-// })
+When('The user tries to create a personal account', async () => {
+  await LoginPage.click_create_personal_account_button();
+  await LoginPage.click_country_field();
+  await LoginPage.click_country_dropdown();
+  await LoginPage.search_country_name(testData.existingUser.country);
+  await LoginPage.select_desired_country();
+  await LoginPage.click_phone_number_field();
+  await LoginPage.enter_phone_number(testData.existingUser.phoneNumber);
+  await LoginPage.click_register_personal_account_button();
+  await LoginPage.enter_otp(testData.existingUser.otp);
+  await LoginPage.click_personal_account_otp_continue_btn();
+})
 
-// Then('The user is shown an error popup Account Already Exists', async () => {
-//   await expect(LoginPage.account_already_exists_heading).toBeDisplayed();
-//   await LoginPage.click_understood_button();
-//   //add code to click the understood button here
-// })
+Then('The user is shown an error popup Account Already Exists', async () => {
+  await expect(LoginPage.account_already_exists_heading).toBeDisplayed();
+  await LoginPage.click_understood_button();
+})
 
 
 

@@ -12,18 +12,6 @@ class LoginPage {
         return $('id=com.android.permissioncontroller:id/permission_allow_foreground_only_button')
     }
 
-    // get profile_photo_button() {
-    //     return $('id=com.orgonize.firstversion:id/user_pic_app_bar')
-    // }
-
-    // get select_login_option_from_popup() {
-    //     return $('id=com.orgonize.firstversion:id/button_g_ok')
-    // }
-
-    // get main_login_button() {
-    //     return $('id=com.orgonize.firstversion:id/login')
-    // }
-
     get country_field() {
         return $('id=com.orgonize.firstversion:id/rlClickConsumer')
     }
@@ -55,18 +43,6 @@ class LoginPage {
     get allow_notifications() {
         return $('id=com.android.permissioncontroller:id/permission_allow_button');
     }
-
-    // get otp_continue_button() {
-    //     return $('id=com.orgonize.firstversion:id/check_code')
-    // }
-
-    // get personal_account_icon() {
-    //     return $(`android=new UiSelector().resourceId("com.orgonize.firstversion:id/layoutBackground").instance(0)`)
-    // }
-
-    // get personal_account_continue_button() {
-    //     return $('id=com.orgonize.firstversion:id/contn')
-    // }
 
     get app_logo() {
         return $('id=com.orgonize.firstversion:id/logo')
@@ -174,46 +150,12 @@ class LoginPage {
     }
 
     async click_continue_button() {
-        // const button = await this.continue_button;
-        // console.log(await button.isDisplayed());
-        // console.log(await button.isEnabled());
-        // await button.click();
         await (await this.continue_button).click();
     }
 
     async click_allow_notifications() {
         await (await this.allow_notifications).click();
     }
-
-
-    // async click_otp_continue_button() {
-    //     await (await this.otp_continue_button).click();
-    // }
-
-    // async select_account_to_login() {
-    //     await (await this.personal_account_icon).click();
-    // }
-
-    // async click_personal_account_continue_button() {
-    //     await (await this.personal_account_continue_button).click();
-    // }
-
-    // async closeCompetitionsPopupIfPresent() {
-    //     try {
-    //         const popupText = await $('//android.widget.TextView[contains(@text,"competitions")]');
-    //         if (await popupText.isDisplayed()) {
-    //             const closeIcon = await $('//android.widget.ImageView[contains(@resource-id,"close") or contains(@content-desc,"close")]');
-    //             if (await closeIcon.isDisplayed()) {
-    //                 await closeIcon.click();
-    //                 console.log('Competitions popup closed with cross icon');
-    //             } else {
-    //                 console.log('Competitions popup found, but cross icon not located');
-    //             }
-    //         }
-    //     } catch (err) {
-    //         console.log('No competitions popup appeared');
-    //     }
-    // }
 
     async click_settings_button() {
         await (await this.settings_button).click();
